@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB Stadium Vault</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="header">
+        <div id="header-container">
+            <button id="home-page-link" onclick="window.location.href=''">MLB Stadium Vault</button>
+            <div id="page-button-container">
+                <button id="Photos" class="page-button" onclick="window.location.href='hit.html'">Distance
+                    Tracker</button>
+            </div>
+        </div>
+    </div>
+
+    <h1>MLB Hit Distance Tracker</h1>
+    <p> The MLB Distance Tracker is a tool that shows where a ball landed in a real MLB game, and can be used to show
+        where it would have landed at a different stadium. Using Statcast data and MLB stadium assets, the distance
+        tracker is a useful tool for any baseball fan.
+
+        <strong>Download Options:</strong>
+
+        <a href="photos.html">Windows Download Here</a>
+
+        <a href="https://nimblevalley.github.io/mlb-distance-compare/">Outdated Web Version Here</a>
+    </p>
+    <h1 style="margin-top: 1vh; margin-left: 2vw; margin-bottom: 1vh;">Controls:</h1>
+    <p style="margin: 3vw !important; margin-top: 3vh !important; margin-bottom: 3vh !important;">W: Forward
+        A: Left
+        S: Backward
+        D: Right
+        Q: Down
+        W: Up
+        Space Bar: Faster
+        Alt/Left Click: Slower
+        Right Click: Rotate
+        Middle Mouse: Zoom
+    </p>
+    <h1 style="margin-top: 1vh; margin-left: 2vw; margin-bottom: 1vh;">Instructions:</h1>
+    <p style="margin: 3vw !important; margin-top: 3vh !important;">  To load a new hit, click the "New Hit" button. On the next screen, select the player's first and last initial from the dropdowns, and select from the pool of players. <strong> If you do not select a player, no data will load, and you will need to restart the app.</strong> After selecting stadium and year, wait for the data to load. You can select from a list of possible hits and outs. If you need to scroll horizontally, use shift + scroll. Click an outcome and wait a moment for the stadium to load.  <strong>If no data loads, that means no search results matched your parameters.</strong> You should now see the hit with the stadium it took place in. <strong>Please note, stadium effects like elevation are not accounted for at the moment. An updated version is in the works.</strong>
+        
+        Switching stadiums is powerful because it lets you see if the ball might have been a homerun in other ballparks. When switching stadiums, please wait 5 seconds for the large files to load. <strong>Please note, Detroit's Comerica Park & Toronto's Rodger's Centre do not have updated dimensions for the 2023 season. This will be updated eventually.</strong> Historic stadiums like Crosley Field and Polo Grounds will likely be added in the future, however, they likely will not be as detailed as previous stadiums. Also, it would be cool to add in old dimensions of existing stadiums, like the deep Tal's Hill at Minute Maid Park.
+
+        To copy the play's description to clipboard, click the "Copy Des" button.
+    
+        You may have noticed the slider underneath the search button. This slider does not affect the maximum height or distance as you may have assumed, but rather, the "flattening" of the ball arc. To illustrate this, <a href="https://www.desmos.com/calculator/5fimuyjdhq">use this desmos graph.</a>  Changing the n variable slider is the same effect that the slider here does. Sometimes, complicated spin or wind will make a ball's flight imperfect, but it is hard to find these details from Statcast. <strong>If the height of a ball seems off, use this slider to adjust to your liking.</strong> Then, switch to other stadiums and compare results. As mentioned previously, this does not harm the data, as it keeps the ball's original max height and landing position intact.
+    </p>
+    <h1 style="margin-top: -5vh; margin-bottom: 1vh;">REMEMBER: The data shown on this app is only as accurate as the Statcast and MLB data.</h1>
+
+</body>
+
+</html>
